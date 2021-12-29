@@ -147,20 +147,23 @@ def main():
         file_write_path = Path(current_folder, file_write)
         clear_file(file_read, file_write_path)
         print("File was cleaned, you could see it in directory.")
-        s_exit = input("If you want to finish clean, press 'q': ")
+
+        print()
+        print("########################################################")
+        print("#                                                      #")
+        print("#               We merge two files now!!!              #")
+        print("#                                                      #")
+        print("########################################################")
+        print()
+
+        merge_files(file_write_path, tenants_file_name)
+        print("Merge is finished")
+
+        s_exit = input("If you want to finish work, press 'q', continue -- any key: ")
         if s_exit == 'q':
             break
-
     print()
-    print("########################################################")
-    print("#                                                      #")
-    print("#               We merge two files now!!!              #")
-    print("#                                                      #")
-    print("########################################################")
-    print()
-
-    merge_files(file_write_path, tenants_file_name)
-    print("We are finished")
+    print("++++++++++++You are awesome. Great work.+++++++++++++++")
 
 
 if __name__ == "__main__":
