@@ -9,4 +9,4 @@ purposes. The UCE maintains CDR information in the active call context, which
 can follow the call from process to process and, in a redundant system, from node
 to node.
 
-This script create csv table for billing. Durations round up in minutes.
+This script create csv table for billing. Durations round up to minutes.
